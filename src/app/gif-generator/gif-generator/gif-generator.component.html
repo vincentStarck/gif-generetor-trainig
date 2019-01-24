@@ -1,0 +1,31 @@
+<h1>{{title}}!</h1>
+<form class="example-form" [formGroup]="imageForm" (ngSubmit)="onSubmit()">
+
+
+
+  <div class="flex-img-container">
+
+    <img class="flex-item" *ngFor="let gif of gifs" alt="image" src="{{gif}}">
+
+  </div>
+
+  <div class="flex-controlls-container">
+    <div class="flex-item-controlls">
+      <button mat-raised-button color="primary" type="submit" [disabled]="!imageForm.valid"> Submit</button>
+    </div>
+
+    <div class="flex-item-controlls">
+      <mat-checkbox class="example-margin" (change)="txtBoxChangeEvent($event)" [checked]='true' formControlName="txtCheckBox">Random</mat-checkbox>
+
+    </div>
+
+    <div class="flex-item-controlls">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="key word" formControlName="keyWordInput">
+
+      </mat-form-field>
+    </div>
+
+  </div>
+
+</form>
