@@ -8,7 +8,7 @@ import { Subscription, interval } from 'rxjs';
 @Component({
   selector: 'app-gif-generator',
   templateUrl: './gif-generator.component.html',
-  styleUrls: ['./gif-generator.component.css']
+  styleUrls: ['./gif-generator.component.scss']
 })
 export class GifGeneratorComponent implements OnInit {
 

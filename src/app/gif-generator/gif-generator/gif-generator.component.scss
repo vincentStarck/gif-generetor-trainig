@@ -1,4 +1,5 @@
-.flex-img-container, .flex-controlls-container {
+
+%shared-properties-container{
   padding: 0;
   margin: 0;
   list-style: none;
@@ -11,11 +12,13 @@
 }
 
 .flex-img-container {
+  @extend %shared-properties-container;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .flex-controlls-container {
+  @extend %shared-properties-container;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -31,6 +34,12 @@
 
 .flex-item-controlls {
   padding: 3px;
-  width: 90px;
+  width: 15px;
+  margin: 4px;
   line-height: 110px;
+}
+
+.flex-item-controlls, input{
+  width: 190px
+
 }
