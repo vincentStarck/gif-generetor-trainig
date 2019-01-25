@@ -1,43 +1,36 @@
+.flex-img-container, .flex-controlls-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+
 .flex-img-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .flex-controlls-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .flex-item {
-    background: rgba(184, 199, 46, 0.575);
-    padding: 3px;
-    width: 230px;
-    height: 90px;
-    margin-top: 10px;
-    line-height: 150px;
-    
-  
-  }
-  .flex-item-controlls {
-    padding: 3px;
-    width: 90px;
-    line-height: 110px;   
-  
-  }
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-controlls-container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background: rgba(184, 199, 46, 0.575);
+  padding: 3px;
+  width: 230px;
+  height: 90px;
+  margin-top: 10px;
+  line-height: 150px;
+}
+
+.flex-item-controlls {
+  padding: 3px;
+  width: 90px;
+  line-height: 110px;
+}
